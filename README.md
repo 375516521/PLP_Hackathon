@@ -5,15 +5,6 @@
 
 This is a simple portfolio website for **C-Tech**, designed to provide quick navigation options for users.
 
-## Features
-
-- **Go to Shop** – Redirects users to the C-Tech online shop.
-- **Contact Us** – Provides ways to reach the company.
-- **Reach us on WhatsApp** – Quick access to WhatsApp communication.
-- **Message on WhatsApp** – Direct messaging link for convenience.
-
-## Footer
-
 © 2025 C-Tech | Developed by Charles Wambua
 
 
