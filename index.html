@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>C_tech.html</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C-Tech Solutions</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: #0b0c10;
+      overflow-x: hidden;
+    }
+    header {
+      background: #1f2833;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+    nav a {
+      color: #66fcf1;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    h1, h2 {
+      color: #66fcf1;
+    }
+    .section {
+      padding: 60px 30px;
+    }
+    .btn {
+      background: #66fcf1;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    footer {
+      background: #1f2833;
+      padding: 30px;
+      text-align: center;
+      color: #ccc;
+    }
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+    }
+    canvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .cv-buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.cv-buttons .btn {
+  padding: 5px 3px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cv-buttons .btn:hover {
+  background-color: #1d4ed8;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>C-Tech</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="overlay">
+    <canvas id="overlayCanvas"></canvas>
+  </div>
+
+  <section id="home" class="section">
+    <h2>Welcome to C-Tech</h2>
+    <p>Empowering Africa and World at large through smart technology & secure software systems.</p>
+    <a class="btn" href="https://whatsapp.com/channel/0029VaWeGij8fewjLSqrvN46" target="_blank">Join Us on WhatsApp</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>C-Tech is a technology company founded by focused on web development, cybersecurity, cloud computing, and secure systems design in Kenya.</p>
+    <h2>Founder</h3>
+    <p> Charles Wambua<p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>✔ Web & Mobile App Development</li>
+      <li>✔ Cybersecurity Solutions</li>
+      <li>✔ IoT Integration</li>
+      <li>✔ IT Consultancy</li>
+    </ul>
+  </section>
+  
+  <h1>Curriculum Vitae</h1>
+
+
+<!-- Paste the buttons here -->
+<div class="cv-buttons">
+  <a href="https://drive.google.com/file/d/1ZU8W4JG4TCIrtLZGggS7LjbsWS4wY7oS/view" target="_blank" rel="noopener" class="btn">
+    View My CV
+  </a>
+  <a href="https://drive.google.com/uc?export=download&id=1ZU8W4JG4TCIrtLZGggS7LjbsWS4wY7oS" class="btn">
+    Download My CV
+  </a>
+</div>
+
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p>We build student portals, e-learning systems, smart hospital solutions, and school fee + bulk SMS systems.</p>
+    <a class="btn" href="https://charleswambua.netlify.app" target="_blank">Visit Portfolio</a>
+  </section>
+
+  <section id="shop" class="section">
+    <h2>Online Shop</h2>
+    <p>Explore our digital tools, premium templates, and licensed software.</p>
+    <a class="btn" href="https://charleswambua.netlify.app/shop" target="_blank">Go to Shop</a>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Reach us on WhatsApp.</p>
+    <a class="btn" href="https://whatsapp.com/channel/0029VaWeGij8fewjLSqrvN46" target="_blank">Message on WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>© 2025 C-Tech | Developed by Charles Wambua</p>
+  </footer>
+
+  <script>
+    const canvas = document.getElementById("overlayCanvas");
+    const ctx = canvas.getContext("2d");
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    const pentagons = [], drops = [], laptops = [];
+
+    for(let i = 0; i < 20; i++) {
+      pentagons.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        r: 10 + Math.random() * 20,
+        dx: Math.random() * 1,
+        dy: Math.random() * 1.5
+      });
+      laptops.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        size: 30 + Math.random() * 20,
+        dx: Math.random() * 0.5,
+        dy: Math.random() * 1
+      });
+      drops.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        len: 10 + Math.random() * 10,
+        speed: 2 + Math.random() * 3
+      });
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, width, height);
+
+      pentagons.forEach(p => {
+        ctx.beginPath();
+        for (let i = 0; i < 5; i++) {
+          const angle = i * 2 * Math.PI / 5;
+          const x = p.x + p.r * Math.cos(angle);
+          const y = p.y + p.r * Math.sin(angle);
+          ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.strokeStyle = "#45a29e";
+        ctx.stroke();
+
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.y > height) p.y = 0;
+        if (p.x > width) p.x = 0;
+      });
+
+      laptops.forEach(l => {
+        ctx.fillStyle = "rgba(255,255,255,0.2)";
+        ctx.fillRect(l.x, l.y, l.size, l.size * 0.6);
+        ctx.fillRect(l.x + l.size * 0.1, l.y + l.size * 0.6, l.size * 0.8, 5);
+        l.y += l.dy;
+        if (l.y > height) l.y = 0;
+      });
+
+      drops.forEach(d => {
+        ctx.beginPath();
+        ctx.moveTo(d.x, d.y);
+        ctx.lineTo(d.x, d.y + d.len);
+        ctx.strokeStyle = "rgba(102, 252, 241, 0.3)";
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        d.y += d.speed;
+        if (d.y > height) d.y = 0;
+      });
+
+      requestAnimationFrame(draw);
+    }
+
+    draw();
+    window.addEventListener("resize", () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+  </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
