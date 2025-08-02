@@ -55,13 +55,6 @@ project/
 
 
 
-## ⚡ How to Run
-
-1. **Clone the repository**
-   
-   git clone https://github.com/yourusername/c-tech-website.git
-Open in your browser
-Simply open index.html with your preferred browser.
 
 📞 Contact & Links
 Website: C-Tech Shop
