@@ -22,7 +22,6 @@ This is a simple portfolio website for **C-Tech**, designed to provide quick nav
 - **Developer:** Charles Wambua
 - **Year:** 2025
 
----
 
 
 
@@ -34,7 +33,7 @@ This is a simple portfolio website for **C-Tech**, designed to provide quick nav
 - **Reach Us on WhatsApp** – Quick access to chat with C-Tech support.
 - **Message on WhatsApp** – Direct WhatsApp messaging link.
 
----
+
 
 ## 🖥️ Tech Stack
 
@@ -57,7 +56,7 @@ project/
 
 
 📞 Contact & Links
-Website: C-Tech Shop
+Website url: charlestek.netlify.app
 
 WhatsApp: Message on WhatsApp
 
